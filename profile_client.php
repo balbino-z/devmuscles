@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Cliente</title>
+    <link rel="stylesheet" href="profile_client.css">
+</head>
+<body>
+<header>
+        <nav>
+            <div class="brand">DEV MUSCLES</div>
+            <ul>
+                <li><strong><a class="current" href="index.html">HOME</a></strong></li>
+                <li><strong><a class="current" href="work.html">TRABALHE CONOSCO</a></strong></li>
+                <li><strong><a class="current" href="personals.html">PERSONAL TRAINERS</a></strong></li>
+                <li><strong><a class="current" href="treinos.html">MONTE SEU TREINO</a></strong></li>
+                <li><strong><a class="current" href="chat.html">CHAT</a></strong></li>
+                <li><strong><a class="current" href="contato.html">CONTATO</a></strong></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>  
+        <div class="avatar">
+            <img src="img/user_avatar.png" alt="Imagem do Cliente">
+        </div>
+    </header>
+
+    <div class="carousel">
+        <!-- Carrossel de imagens das academias -->
+        <img src="img/gym1.jpg" alt="Academia 1">
+        <img src="img/gym2.jpg" alt="Academia 2">
+        <img src="img/gym3.jpg" alt="Academia 3">
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="profile_client.js"></script>
+</body>
+</html>

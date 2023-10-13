@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('img/gm.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FAFAFA;
+    text-align: center;
+}
+
+.select-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20% auto;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #FFC500;
+    color: #2D2D37;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+}
