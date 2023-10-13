@@ -1,0 +1,55 @@
+/* Estilos para a seção de equipe */
+#equipe {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.team-carousel {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+}
+
+.team-slide {
+    flex: 0 0 33.33%; /* Um terço do tamanho do container */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s;
+}
+
+.team-slide img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Estilos para os botões de navegação do carrossel */
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-nav button {
+    background: none;
+    border: none;
+    color: #000000; /* Altere a cor para branco ou outra cor visível */
+}
+
+/* Estilos para o botão esquerdo (anterior) */
+.carousel-nav button.prev {
+    transform: rotate(180deg);
+}
+
+/* Estilos para o botão direito (próximo) */
+.carousel-nav button.next {
+    /* Estilos para o botão de próxima imagem */
+}
+
+/* Estilos para a seção de objetivos */
+#objetivos {
+    background-color: #F4F4F4;
+    padding: 40px 0;
+}
