@@ -63,6 +63,47 @@ nav a:hover::after {
     font-size: 24px;
     font-weight: bold;
 }
+.scroll-to-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFC500;
+    color: #2D2D37;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-to-bottom:hover {
+    background-color: #FFD700;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #FFC500;
+    color: #2D2D37;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-to-top:hover {
+    background-color: #FFD700;
+}
 
 .social-icons a {
     color: #FAFAFA;
@@ -71,32 +112,35 @@ nav a:hover::after {
     font-size: 18px;
 }
 
-.hero {
-    position: relative;
-    height: 100vh; /* Altura da tela inteira */
-    background-image: url('img/acad.png');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Adiciona uma camada escura */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#personal-trainers {
+    padding: 40px 0;
+    background-color: #16161b;
 }
 
-.hero-content {
+#personal-trainers h1 {
     text-align: center;
+    font-size: 40px;
 }
 
-.hero h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.personal-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
+.personal-info {
+    flex: 0 0 calc(33.333% - 20px); /* Ajuste o tamanho de cada personal trainer card conforme necessário */
+    padding: 20px;
+    margin: 10px;
+    background-color: #2D2D37;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.personal-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
 }
 
 .btn {
@@ -108,8 +152,17 @@ nav a:hover::after {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    display: block;
+    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #FFD700;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .personal-info {
+        flex: 0 0 calc(50% - 20px); /* Reduz o tamanho para 50% em telas menores */
+    }
 }

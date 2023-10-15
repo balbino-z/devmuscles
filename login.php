@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($user["type"] === "trainer") {
             header("Location: profile_trainer.php");
         } elseif ($user["type"] === "client") {
-            header("Location: profile_client.php");
+            header("Location: profile_client.html");
         } else {
             die("Tipo de usuário desconhecido.");
         }
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button type="button" id="show-password">👁</button>
                 </div>
 
-                <a href="php/esqueceu-senha.php" class="forgot-password">Esqueceu Sua Senha?</a>
+                <a href="esqueceu-senha.php" class="forgot-password">Esqueceu Sua Senha?</a>
 
                 <button type="submit">Entrar</button>
             </form>

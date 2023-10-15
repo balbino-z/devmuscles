@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainers - Dev Muscles</title>
+    <link rel="stylesheet" href="personals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/21de1c75a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="scroll-to-bottom">
+        <i class="fas fa-chevron-down"></i>
+    </div>   
+    <header>
+        <nav>
+            <div class="brand">DEV MUSCLES</div>
+            <ul>
+                <li><strong><a class="current" href="index.html">HOME</a></strong></li>
+                <li><strong><a class="current" href="sobre.html">SOBRE NÓS</a></strong></li>
+                <li><strong><a class="current" href="treinos.html">MONTE SEU TREINO</a></strong></li>
+                <li><strong><a class="current" href="trabalho.html">TRABALHE CONOSCO</a></strong></li>
+                <li><strong><a class="current" href="contato.html">CONTATO</a></strong></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <section id="personal-trainers" class="section">
+        <div class="container">
+            <h1>Nossos Personal Trainers</h1>
+            <div class="personal-card">
+                <div class="personal-info">
+                    <img src="img/luta.jpg" alt="Personal Trainer 1">
+                    <h2>Lucas</h2>
+                    <p>"Olá, sou Lucas, seu personal de luta. Com anos de prática nas artes marciais, estou aqui para aprimorar suas habilidades de combate. Seja você um iniciante ou um lutador experiente, meu treinamento personalizado em boxe, jiu-jitsu, e muay thai o ajudará a ganhar confiança no ringue e a alcançar seus objetivos de fitness."</p>
+                    <p>Valor: R$ 50/hora</p>
+                    <p>CREF: 123456/SP</p> <!-- Adicione o CREF fictício aqui -->
+                    <a href="#" class="btn">Contratar</a>
+                </div>
+                <div class="personal-info">
+                    <img src="img/musculação.jpg" alt="Personal Trainer 2">
+                    <h2>Mariana</h2>
+                    <p>"Olá, sou a Mariana, sua personal de musculação. Com formação em educação física e nutrição, estou aqui para transformar seu corpo. Vamos desenvolver um plano de treinamento personalizado e uma dieta equilibrada para ajudá-lo a ganhar massa muscular e alcançar seus objetivos de força e condicionamento."</p>
+                    <p>Valor: R$ 60/hora</p>
+                    <p>CREF: 789012/RJ</p> <!-- Adicione o CREF fictício aqui -->
+                    <a href="#" class="btn">Contratar</a>
+                </div>
+                <div class="personal-info">
+                    <img src="img/yoga.jpg" alt="Personal Trainer 2">
+                    <h2>Ana</h2>
+                    <p>"Namastê, sou a Ana, sua personal de yoga. Minha paixão é guiar você na jornada de descoberta interior e flexibilidade. Com anos de experiência em yoga e meditação, vou ajudá-lo a fortalecer seu corpo, acalmar sua mente e aprimorar seu equilíbrio. Vamos explorar juntos os benefícios do yoga para a saúde física e mental."</p>
+                    <p>Valor: R$ 60/hora</p>
+                    <p>CREF: 345678/SP</p> <!-- Adicione o CREF fictício aqui -->
+                    <a href="#" class="btn">Contratar</a>
+                </div>
+                <div class="personal-info">
+                    <img src="img/idoso.jpg" alt="Personal Trainer 2">
+                    <h2>Pedro</h2>
+                    <p>"Olá, sou o Pedro, seu personal com foco nos idosos. Minha missão é ajudar a terceira idade a viver uma vida ativa e saudável. Com empatia e atenção, adapto os exercícios para atender às suas necessidades e limitações relacionadas à idade. Vamos juntos promover vitalidade, mobilidade e independência."</p>
+                    <p>Valor: R$ 60/hora</p>
+                    <p>CREF: 567890/MG</p> <!-- Adicione o CREF fictício aqui -->
+                    <a href="#" class="btn">Contratar</a>
+                </div>
+                <div class="personal-info">
+                    <img src="img/atletismo.jpg" alt="Personal Trainer 2">
+                    <h2>Isabel</h2>
+                    <p>"Oi, sou a Isabel, sua personal de atletismo. Se você é um atleta em busca de melhorias no desempenho, estou aqui para impulsionar seus resultados. Com experiência em treinamento esportivo, desenvolverei um programa de condicionamento físico para aprimorar sua velocidade, resistência e agilidade. Prepare-se para alcançar seu potencial máximo no esporte."</p>
+                    <p>Valor: R$ 60/hora</p>
+                    <p>CREF: 901234/RS</p> <!-- Adicione o CREF fictício aqui -->
+                    <a href="#" class="btn">Contratar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Selecione o botão de rolagem para baixo
+            var scrollDownButton = document.querySelector(".scroll-to-bottom");
+    
+            // Adicione um evento de clique ao botão de rolagem para baixo
+            scrollDownButton.addEventListener("click", function() {
+                // Role a página para baixo em uma animação suave
+                window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+            });
+    
+            // Selecione o botão de rolagem para cima
+            var scrollTopButton = document.querySelector(".scroll-to-top");
+    
+            // Adicione um evento de clique ao botão de rolagem para cima
+            scrollTopButton.addEventListener("click", function() {
+                // Role a página para cima em uma animação suave
+                window.scrollBy({ top: -window.innerHeight, behavior: "smooth" });
+            });
+        });
+        </script>
+    </body>
+    </html>

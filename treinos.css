@@ -64,42 +64,46 @@ nav a:hover::after {
     font-weight: bold;
 }
 
-.social-icons a {
-    color: #FAFAFA;
-    text-decoration: none;
-    margin-left: 10px;
+#monte-seu-treino {
+    padding: 40px 0;
+    background-color: #16161b;
+}
+
+#monte-seu-treino h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Adicione margem inferior para espaçamento */
+}
+
+.select-wrapper label {
+    margin-bottom: 5px;
+}
+
+.select-wrapper select {
+    width: 100%;
+}
+
+.treino-form, .treino-preview {
+    background-color: #2D2D37;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
     font-size: 18px;
 }
 
-.hero {
-    position: relative;
-    height: 100vh; /* Altura da tela inteira */
-    background-image: url('img/acad.png');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Adiciona uma camada escura */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content {
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
-.btn {
+button {
     background-color: #FFC500;
     color: #2D2D37;
     padding: 10px 20px;
@@ -108,8 +112,31 @@ nav a:hover::after {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
     background-color: #FFD700;
+}
+
+#lista-de-exercicios {
+    list-style-type: none;
+}
+
+#lista-de-exercicios li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#total-volume {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .treino-form, .treino-preview {
+        padding: 10px;
+    }
 }
