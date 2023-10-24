@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Trabalhe Conosco</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-img">
+            <img src="img/person.jpg" alt="Imagem de Fundo">
+        </div>
+        <div class="form">
+            <h2>Cadastro para Personal Trainer</h2>
+            <p>Preencha os campos abaixo para se candidatar.</p>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+
+            <label for="cref">Número de Registro no CREF:</label>
+            <input type="text" id="cref" name="cref" placeholder="Seu número de registro CREF">
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" placeholder="Fale um pouco sobre sua experiência e especialidades"></textarea>
+
+            <label for="foto">Foto de Perfil:</label>
+            <input type="file" id="foto" name="foto">
+
+            <label for="fotos-antigas">Fotos de Trabalhos Antigos:</label>
+            <input type="file" id="fotos-antigas" name="fotos-antigas" multiple>
+
+            <button type="submit">Enviar Cadastro</button>
+        </div>
+    </div>
+</body>
+</html>
